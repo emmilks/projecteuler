@@ -32,7 +32,7 @@ def letter_value(let):
 triangle_numbers = [get_triangle_numbers(n) for n in range(1, 19)]
 triangle_word = 0
 
-with open("euler42.txt", 'r') as f:
+with open("../data/euler42.txt", 'r') as f:
     # Breaks down file to read each individual character
     for line in f:
         delim = line.strip().split(',')

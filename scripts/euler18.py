@@ -4,7 +4,7 @@ def max_max_path(mat):
             mat[i][j] += max(mat[i+1][j], mat[i+1][j+1])
     return mat[0][0]
 
-with open("euler18.txt", "r") as file:
+with open("../data/euler18.txt", "r") as file:
     matrix = [line.strip().split() for line in file]
 
 for j in range(len(matrix)):
