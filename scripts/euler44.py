@@ -1,8 +1,9 @@
 def pentagonal(n):
-    return n * (3*n-1) // 2
+    return n * (3 * n - 1) // 2
+
 
 LIMIT = 2500
-pentagonals = [pentagonal(n) for n in range(1,LIMIT+1)]
+pentagonals = [pentagonal(n) for n in range(1, LIMIT + 1)]
 possibles = []
 for i in pentagonals:
     for j in pentagonals:

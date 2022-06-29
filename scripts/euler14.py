@@ -13,7 +13,9 @@ from project_euler import collatz_chain
 
 max_number = 1_000_000
 
-print(f"This program finds the largest Collatz chain for all numbers less than {max_number:,}.\n")
+print(
+    f"This program finds the largest Collatz chain for all numbers less than {max_number:,}.\n"
+)
 half_max = max_number // 2
 longest_chain = 0
 answer = 0

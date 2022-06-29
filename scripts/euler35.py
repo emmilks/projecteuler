@@ -1,14 +1,16 @@
 from math import floor, sqrt
 
+
 def prime_sieve(n):
     primes = [True] * n
     primes[0] = False
     primes[1] = False
-    for p in range(2,floor(sqrt(n)) + 1):
+    for p in range(2, floor(sqrt(n)) + 1):
         if primes[p] == True:
-            for j in range(p*p, n, p):
+            for j in range(p * p, n, p):
                 primes[j] = False
     return primes
+
 
 def is_prime(n):
     if n == 1:
@@ -17,10 +19,11 @@ def is_prime(n):
         return True
     if n % 2 == 0:
         return False
-    for d in range(3, floor(sqrt(n))+1, 2):
+    for d in range(3, floor(sqrt(n)) + 1, 2):
         if n % d == 0:
             return False
     return True
+
 
 n = 10**6
 sieve = prime_sieve(n)
@@ -42,7 +45,6 @@ for prime in primes:
         if is_prime(int(str_prime)):
             results[prime].append(str_prime)
 
-results = {key:value for key, value in results.items()
-           if len(value) == len(str(key))}
+results = {key: value for key, value in results.items() if len(value) == len(str(key))}
 
 print(len(results))

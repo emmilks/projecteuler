@@ -15,7 +15,7 @@ def pythagorean_product():
     for a in range(3, floor((s - 3) / 3) + 1):
         for b in range(a + 1, floor((s - 1 - a) / 2) + 1):
             c = s - a - b
-            if c ** 2 == a ** 2 + b ** 2:
+            if c**2 == a**2 + b**2:
                 print("s =", s)
                 print("a:", a, "b:", b, "c:", c)
                 print(a * b * c)

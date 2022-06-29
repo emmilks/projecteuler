@@ -1,7 +1,7 @@
-'''
+"""
 Project_Euler #7
 Find the 10,001st prime number
-'''
+"""
 from project_euler import test_primes
 
 primes = []

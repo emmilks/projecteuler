@@ -1,4 +1,4 @@
-n = 2 ** 1000
+n = 2**1000
 total = 0
 while n:
     total += n % 10

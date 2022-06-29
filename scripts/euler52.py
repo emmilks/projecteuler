@@ -1,7 +1,7 @@
 from itertools import permutations
 
 results = {}
-for number in range(1,150001):
+for number in range(1, 150001):
     results.setdefault(number, [])
     for multiplier in range(2, 7):
         results[number].append(str(number * multiplier))

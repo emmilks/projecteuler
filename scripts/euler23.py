@@ -20,7 +20,7 @@ for j in abundant_nums:
 
 total = 0
 for x in range(1, len(sum_abundant_nums)):
-    if (sum_abundant_nums[x] == 0):
+    if sum_abundant_nums[x] == 0:
         total += x
 
 print(total)

@@ -1,14 +1,16 @@
 from math import floor, sqrt
 
+
 def prime_sieve(n):
     primes = [True] * n
     primes[0] = False
     primes[1] = False
-    for p in range(2,floor(sqrt(n)) + 1):
+    for p in range(2, floor(sqrt(n)) + 1):
         if primes[p] == True:
-            for j in range(p*p, n, p):
+            for j in range(p * p, n, p):
                 primes[j] = False
     return primes
+
 
 n = 10**3
 sieve = prime_sieve(n)

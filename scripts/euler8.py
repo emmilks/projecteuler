@@ -35,7 +35,7 @@ number = "7316717653133062491922511967442657474235534919493496983520312774506326
 def main(data, length):
     current = 0
     for i in range(len(data) - length):
-        part = data[i:i + length]
+        part = data[i : i + length]
         product = 1
         for char in part:
             product *= int(char)

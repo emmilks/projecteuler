@@ -4,23 +4,25 @@ def is_palindrome(x):
 
     rev_num = 0
     temp = x
-    
+
     while temp > 0:
-        rev_num = rev_num*10 + (temp % 10)
+        rev_num = rev_num * 10 + (temp % 10)
         temp //= 10
-        
+
     if rev_num == x:
         return True
     return False
 
+
 def reverse_number(x):
     rev_num = 0
     temp = x
-    
+
     while temp > 0:
-        rev_num = rev_num*10 + (temp % 10)
+        rev_num = rev_num * 10 + (temp % 10)
         temp //= 10
     return rev_num
+
 
 def is_lychrel(x):
     for _ in range(50):
@@ -30,6 +32,7 @@ def is_lychrel(x):
         else:
             x = num
     return True
+
 
 answer = 0
 for i in range(10000):
