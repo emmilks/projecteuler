@@ -30,4 +30,4 @@ for i in range(len(primes)):
         if x in primes and length > max_length:
             max_length = length
             longest = x
-print(longest, max_length)
+print(f"Answer: {longest}")
