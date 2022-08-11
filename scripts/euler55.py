@@ -2,12 +2,7 @@ def is_palindrome(x):
     if x < 0:
         return False
 
-    rev_num = 0
-    temp = x
-
-    while temp > 0:
-        rev_num = rev_num * 10 + (temp % 10)
-        temp //= 10
+    rev_num = reverse_number(x)
 
     if rev_num == x:
         return True
