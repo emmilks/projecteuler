@@ -1,5 +1,5 @@
 from itertools import permutations
-from math import sqrt, floor
+from math import floor, sqrt
 
 
 def is_prime(n):

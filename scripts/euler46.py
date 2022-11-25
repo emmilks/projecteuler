@@ -32,7 +32,7 @@ while True:
         primes = [prime for prime in range(n) if sieve[prime]]
         for prime in primes:
             x = floor(sqrt((n - prime) // 2))
-            test = prime + 2 * x**2
+            test = prime + 2 * x ** 2
             if test == n:
                 break
         if test != n:

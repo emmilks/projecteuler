@@ -25,7 +25,7 @@ def is_prime(n):
     return True
 
 
-n = 10**6
+n = 10 ** 6
 sieve = prime_sieve(n)
 primes = [prime for prime in range(n) if sieve[prime]]
 

@@ -18,14 +18,14 @@ def prime_sieve(n):
     return primes
 
 
-n = 10**8
+n = 10 ** 8
 dig = 7
 primes = prime_sieve(n)
 max_prime = 0
 
 for i in range(1, dig + 1):
     lower_bound = 10 ** (i - 1) + 1
-    upper_bound = 10**i
+    upper_bound = 10 ** i
     for k in range(lower_bound, upper_bound, 2):
         if primes[k] and is_pandigital(k, i) and max_prime < k:
             max_prime = k

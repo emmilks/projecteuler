@@ -12,7 +12,7 @@ def prime_sieve(n):
     return primes
 
 
-n = 10**3
+n = 10 ** 3
 sieve = prime_sieve(n)
 primes = [prime for prime in range(n) if sieve[prime]]
 

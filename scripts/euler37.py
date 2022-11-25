@@ -38,7 +38,7 @@ for prime in primes:
     count = 1
     while right_trunc > 0:
         right_trunc //= 10
-        left_trunc = prime % (10**count)
+        left_trunc = prime % (10 ** count)
         if is_prime(right_trunc):
             num_prime += 1
         if is_prime(left_trunc):

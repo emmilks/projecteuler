@@ -1,4 +1,4 @@
-from math import sqrt, floor
+from math import floor, sqrt
 
 
 def is_pandigital(n):

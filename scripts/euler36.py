@@ -1,4 +1,4 @@
-from project_euler import is_palindrome, base_conversion
+from project_euler import base_conversion, is_palindrome
 
 palindrome = []
 for i in range(1, 1_000_001):

@@ -7,7 +7,7 @@ d = 1
 n = 0
 for i, j in enumerate(s):
     k = i + 1
-    if k == 10**n:
+    if k == 10 ** n:
         d *= int(j)
         n += 1
 

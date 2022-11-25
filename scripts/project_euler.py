@@ -1,6 +1,6 @@
-from math import floor, sqrt, ceil
-from itertools import count
 from functools import lru_cache
+from itertools import count
+from math import ceil, floor, sqrt
 
 
 def base_conversion(n, base=2):
@@ -22,7 +22,7 @@ def base_conversion(n, base=2):
     return converted_number
 
 
-@lru_cache(maxsize=2**24)
+@lru_cache(maxsize=2 ** 24)
 def collatz_chain(n):
     """Calculates Collatz sequence for n and returns the length of the sequence"""
     # Collatz Test
@@ -40,7 +40,7 @@ def difference_squared_sums(n):
     and the square of the sum of the natural numbers"""
     sum = int((n / 2) * (n + 1))
     squared_sum = int((n / 6) * (2 * n + 1) * (n + 1))
-    return sum**2 - squared_sum
+    return sum ** 2 - squared_sum
 
 
 def is_palindrome(x):
@@ -155,7 +155,7 @@ def sum_factors(num):
             total += divisor
             total += num // divisor
         divisor += 1
-    if n**2 == num:
+    if n ** 2 == num:
         total += n
     return total
 
