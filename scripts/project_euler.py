@@ -1,4 +1,4 @@
-from functools import lru_cache
+from functools import cache
 from itertools import count
 from math import ceil, floor, sqrt
 
@@ -22,7 +22,7 @@ def base_conversion(n, base=2):
     return converted_number
 
 
-@lru_cache(maxsize=2 ** 24)
+@cache
 def collatz_chain(n):
     """Calculates Collatz sequence for n and returns the length of the sequence"""
     # Collatz Test
