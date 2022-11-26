@@ -108,7 +108,6 @@ def get_prime_factors(n):
     for d in range(1, floor(sqrt(n)) + 2):
         if n % d == 0 and test_primes(d):
             factors.add(d)
-            factors.add(n // d)
     return factors
 
 
