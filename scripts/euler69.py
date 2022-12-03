@@ -26,10 +26,10 @@ from operator import mul
 #         return int(n * prod(inv_pfactors))
 
 
-# limit = 10 ** 6
-# sieve = prime_sieve(limit)
-# primes = [prime for prime in range(limit) if sieve[prime]]
-# xs = [n / totient(n, primes) for n in range(1, limit + 1)]
+# LIMIT = 10 ** 6
+# sieve = prime_sieve(LIMIT)
+# primes = [prime for prime in range(LIMIT) if sieve[prime]]
+# xs = [n / totient(n, primes) for n in range(1, LIMIT + 1)]
 
 # maximum = 0
 # maximum_frac = 0
@@ -52,8 +52,8 @@ def prime_sieve(n):
     return primes
 
 
-limit = 10 ** 6
-sieve = prime_sieve(limit)
-primes = [prime for prime in range(limit) if sieve[prime]]
-prime_product = list(takewhile(lambda x: x < limit, accumulate(primes, mul)))
+LIMIT = 10 ** 6
+sieve = prime_sieve(LIMIT)
+primes = [prime for prime in range(LIMIT) if sieve[prime]]
+prime_product = list(takewhile(lambda x: x < LIMIT, accumulate(primes, mul)))
 print(prime_product[-1])
